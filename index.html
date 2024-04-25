@@ -3,55 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorblind Simulation</title>
     <link rel="stylesheet" href="style.css">
-    <title>Colour Detection</title>
 </head>
 <body>
-    <div class="banner">
-    <div class="navbar">
-        <div class="circular-image">
-        <img src="logo.png" class="logo"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
+    <h1>HOW COLOR BLIND PEOPLE SEE THE WORLD?? </h1>
+    <input type="file" id="uploadInput">
+    <select id="deficiencyType">
+        <option value="none">None</option>
+        <option value="protanopia">Protanopia</option>
+        <option value="deuteranopia">Deuteranopia</option>
+        <option value="tritanopia">Tritanopia</option>
+    </select>
+    <button onclick="simulateAndDisplay()">Simulate Colorblindness</button>
+    <br><br>
+    <div id="outputContainer">
+        <canvas id="originalCanvas" width="400" height="200"></canvas>
+        <canvas id="modifiedCanvas" width="400" height="200"></canvas>
     </div>
-    <div class="content">
-        <h1>Welcome to our application designed for Colour-blind individuals</h1></div>
-        <div class="card-container">
-            <div class="card">
-                <img src="red_green_test.jpg">
-                <div class="card-content">
-                    <h3>Give the Red-Green Color Blindness Test here</h3>
-                    <p>This a test based on the standard Ishihara plates allowing you to understand the extent of red-green deficiency you have.</p>
-                    <a href="test_home.html" class="btn">Start</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="blue_test.jpg">
-                <div class="card-content">
-                    <h3>Give the Blue Color Blindness Test here</h3>
-                    <p>This is a test based on the C-gap method allowing you to understand the extent of blue color deficiency you have.</p>
-                    <a href="blue_test.html" class="btn">Start</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="how_color_blind_see.jpg">
-                <div class="card-content">
-                    <h3>What Do Color-Blind People See?</h3>
-                    <p>Adjust the colors for an uploaded image allowing a normal vision user to view the image from the color-blind person’s perspective.</p>
-                    <a href="how_color_blind_see.html" class="btn">Start</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="color_picker_128.png">
-                <div class="card-content">
-                    <h3>Which Color Is This?</h3>
-                    <p>A simple color picker extension. Easily pick any color on the screen, view a history of picked colors, and copy or clear them with a single click.</p>
-                    <a href="color_picker.html" class="btn">Start</a>
-                </div>
-            </div>
-        </div>       
-</div>
+    <script src="script.js"></script>
 </body>
 </html>
