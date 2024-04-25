@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('pexels-henry-&-co-2341290.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Arial Black', sans-serif; /* Choose an attractive font */
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    background: linear-gradient(45deg, #0557ca, #5f14ce); /* Apply a gradient color effect */
+    -webkit-background-clip: text; /* Clip text to the background */
+    -webkit-text-fill-color: transparent; /* Hide the text color */
+    animation: glow 2s infinite alternate; /* Add a glow animation */
+   
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        text-shadow: 2px 2px 20px rgba(255, 255, 255, 1);
+    }
+}
+
+
+input[type="file"],
+select,
+button {
+    margin: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #014397; /* Button background color */
+    color: white;
+    cursor: pointer;
+}
+
+
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #333; /* Border color for canvas */
+    width: 80%; /* Set the desired width */
+    max-width: 700px; /* Set the maximum width */
+    height: 500px ; /* Maintain aspect ratio */
+}
+
+
+#outputContainer {
+    display: flex;
+    justify-content: center;
+}
